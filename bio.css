@@ -62,16 +62,14 @@ a .fa{
 }
 .links{
     margin:50px;
-    padding-left: 15%;
-    padding-right: 15%;
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 i{
-    font-size: 30px !important;
+    font-size: 25px !important;
 }
 
 a:hover .fa{
