@@ -7,6 +7,7 @@
     <title>Welcome to Raiyan Abrar's Portfolio</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scroll animation/aos.css">
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar.css">
@@ -21,6 +22,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <script src="./scroll animation/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1300,
+        });
+    </script>
 
     <div class = "container navigationbar">
         <header>
@@ -81,8 +88,8 @@
 
         <div class="aboutmepart">
             <div class = "aboutmecontainer">
-                <h2 class = "whomi"><div id="mi"><a class="aboutlink" href="about.html" target = "_blank">About<br>Me</a></div></h2>
-                <ul class="info">
+                <h2 data-aos="fade-right" class = "whomi"><div id="mi"><a class="aboutlink" href="about.html" target = "_blank">About<br>Me</a></div></h2>
+                <ul class="info" data-aos="fade-left" >
                     <li>Logo Designer</li>
                     <li>Video Editor</li>
                     <li>Landscape Photographer</li>
@@ -95,29 +102,29 @@
 
         <div class = "mygallery">
             <div id="works">
-                <h3>My Works</h3>
+                <h3  data-aos="fade-right" >My Works</h3>
             </div>
             <div class="cards">
                 <section class="card-list">
-                    <article class="card" style="background: url('coding.png'); background-size: cover">
+                    <article class="card" data-aos="zoom-in-left" style="background: url('coding.png'); background-size: cover">
                         <header class="card-header">
                             <h4>Coding Projects</h4>
                         </header>
                     </article>
 
-                    <article class="card" style="background: url('illustration.jpg'); background-size: cover">
+                    <article class="card" data-aos="zoom-in-left" style="background: url('illustration.jpg'); background-size: cover">
                         <header class="card-header">
                             <h4>Illustrations</h4>
                         </header>
                     </article>
 
-                    <article class="card" style="background: url('photograph.jpg'); background-size: cover">
+                    <article class="card" data-aos="zoom-in-left" style="background: url('photograph.jpg'); background-size: cover">
                         <header class="card-header">
                             <h4>Photography</h4>
                         </header>
                     </article>
 
-                    <article class="card" style="background: url('logo.jpg'); background-size: cover">
+                    <article class="card" data-aos="zoom-in-left" style="background: url('logo.jpg'); background-size: cover">
                         <header class="card-header">
                             <h4>Logo Designs</h4>
                         </header>
@@ -130,31 +137,31 @@
 
         <section class = "services">
             <article class = "service">
-                <header class="service-header"><h4>Services I Provide</h4></header>
+                <header class="service-header" data-aos="fade-left" ><h4>Services I Provide</h4></header>
                 
                 <section class="service-list">
-                    <article class="servicecard" style="background: url('logocard.jpg'); background-size: cover">
+                    <article class="servicecard" data-aos="zoom-in-down" style="background: url('logocard.jpg'); background-size: cover">
                         <header class="servicecard-header">
                             <h4>Logo designing</h4>
                             <p>Create a modern minimalistic professional looking logo</p>
                         </header>
                     </article>
 
-                    <article class="servicecard" style="background: url('illustration.jpg'); background-size: cover">
+                    <article class="servicecard" data-aos="zoom-in-down" style="background: url('illustration.jpg'); background-size: cover">
                         <header class="servicecard-header">
                             <h4>Illustrations</h4>
                             <p>Create a digital art with a selected theme and color palette</p>
                         </header>
                     </article>
 
-                    <article class="servicecard" style="background: url('photocard.jpg'); background-size: cover">
+                    <article class="servicecard" data-aos="zoom-in-down"  style="background: url('photocard.jpg'); background-size: cover">
                         <header class="servicecard-header">
                             <h4>Photography</h4>
                             <p>Take photographs for personal, commercial use which include portraits, landscape sceneries, events and much more</p>
                         </header>
                     </article>
 
-                    <article class="servicecard" style="background: url('video.jpg'); background-size: cover">
+                    <article class="servicecard" data-aos="zoom-in-down"  style="background: url('video.jpg'); background-size: cover">
                         <header class="servicecard-header">
                             <h4>Business intro videos</h4>
                             <p>Create a professional looking intro for any corporate company, youtube channel or any event</p>
@@ -167,8 +174,8 @@
 
         <section class = "contactmeh">
             <article class = "contact">
-                <header class="contact-header"><h4>Contact Me</h4></header>
-                <p>If you have any inquiries<br>or wish to contact me about business <br><a href="#">Click here</a></p>
+                <header class="contact-header" data-aos="zoom-out-right"><h4>Contact Me</h4></header>
+                <p data-aos="zoom-out-left">If you have any inquiries<br>or wish to contact me about business <br><a href="#">Click here</a></p>
             </article>
         </section>
 >

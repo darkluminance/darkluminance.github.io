@@ -7,10 +7,10 @@
     <title>Raiyan Abrar's Biography</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scroll animation/aos.css">
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="bio.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,6 +21,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <script src="./scroll animation/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            duration: 1300,
+        });
+    </script>
 
     <div class = "container navigationbar">
         <header>
@@ -63,14 +69,22 @@
     </div>
 
     <div class = "biocontainer">
-        <div class="myimage">
+        <div class="myimage" data-aos="zoom-out" >
             <img src="me.jpg" alt="my photo">
+            <div class="img-back">
+                <h3>Raiyan Abrar</h3>
+                <div class = "links">
+                    <a href="https://www.instagram.com/__rainyan__" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/darkluminance" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://dribbble.com/darkluminance" target="_blank"><i class="fa fa-dribbble"></i></a>
+                </div>
+            </div>
         </div>
 
         <div class="mybio">
-            <h2>Biography</h2>
-            <p>Raiyan Abrar is content creator from Dhaka, Bangladesh specializing in Logo designing and Video editing. He currently studies Computer Science and Engineering in a military based university in Dhaka.<br><br>
-            His interest mostly lies on creating things and sharing them to social medias. He loves travelling and taking photographs of his trip.<br><br>He also does designing UI/UX for apps, posters for events, frontend app development and 2d game development.</p>
+            <h2 data-aos="zoom-in-right" >Biography</h2>
+            <p data-aos="zoom-in-left" >Raiyan Abrar is content creator from Dhaka, Bangladesh specializing in Logo designing and Game Development. He currently studies Computer Science and Engineering in a military based university in Dhaka.<br><br>
+            His interest mostly lies on creating things and sharing them to social medias. He loves travelling and taking photographs of his trips a lot.<br><br>He also does designing UI/UX for apps, posters for events, frontend app development and 2d game development.</p>
         </div>
     </div>
 
