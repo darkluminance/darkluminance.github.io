@@ -1,0 +1,438 @@
+body{
+    background-color: rgb(38, 38, 38);
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-dark{
+    background-color: rgb(38, 38, 38);
+}
+
+.navbar{
+    margin-left: 12%;
+    margin-right: 12%;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+}
+
+.nav-item{
+    font-size: 13px;
+    width: 75px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    display: block;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .nav-link.active{
+    color: #ff7675;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
+
+.navbar-toggler {
+    padding: .45rem .45rem;
+    font-size: 1.05rem;
+    line-height: 1;
+    background-color: #ff7675;
+    border: none;
+}
+
+a.nav-link{
+    text-align: center;
+}
+
+.container, .navigationbar{
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@keyframes welcomeanim {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+
+.welcome{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 120px;
+    position:relative;
+    height: 420px;
+    animation-name: welcomeanim;
+    animation-duration: 2s;
+}
+
+.welcomeimg{
+    background: url("bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    position:relative;
+    height: 650px;
+}
+
+@keyframes welcometextanim {
+    from {left: 0;}
+    to {left: 100;}
+  }
+
+.welcome h1{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    font-size: 4.5rem;
+    position:relative;
+    top: 125px;
+    left: 100px;
+    margin: 0px 0px 0px 0px;
+    width: 69%;
+    animation-name: welcometextanim;
+    animation-duration: 1s;
+}
+
+@keyframes introlistanim {
+    from {bottom: 180px;}
+    to {bottom: 80px;}
+}
+
+.introlist{
+    color:white;
+    position:relative;
+    left: 69%;
+    bottom: 80px;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 1.25rem;
+    border-left: 6px solid #ff7675;
+    width: 50px;
+    height: 200px;
+    animation-name: introlistanim;
+    animation-duration: 1s;
+}
+
+.introlist li{
+    padding-bottom: 10px;
+}
+
+a .fa{
+    font-size: 20;
+    color:white;
+    margin-right: 25px;
+    margin-top: 25px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+a:hover .fa{
+    transform: scale(1.5); 
+}
+
+#Layer_1{
+    width: 12%;
+    height: auto;
+}
+
+.aboutmepart{
+    height: 450px;
+    /*
+    background-color: rgb(42, 42, 42);
+    */
+    background-color: rgb(35, 35, 35);
+}
+
+.aboutmecontainer{    
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 450px;
+}
+
+.aboutlink{
+    color:white; 
+}
+.aboutlink:hover{
+    color:rgb(199, 199, 199);
+    text-decoration: none;
+}
+.whomi:hover {
+    background: rgba(0,0,0,0.5);
+}
+.whomi {
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight:700;
+    font-size: 3.5rem;
+    position:relative;
+    margin-bottom:0;
+    margin-top:0;
+    top: 80px;
+    left: 100px;
+    background-color: #ff7675;
+    height:250px;
+    width: 250px;/*
+    animation-name: welcometextanim;
+    animation-duration: 1s;*/
+}
+
+#mi{
+    height: 70%;
+    width: 75%;
+    margin: auto;
+    position:relative;
+    top: 20%;
+    
+}
+
+.info{
+    color:white;
+    position:relative;
+    float:right;
+    /*left: 75%;*/
+    bottom: 160px;
+    margin-right: 10%;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size: 1.25rem;
+    width: 300px;
+    height: auto;
+
+}
+
+.info li{
+    padding-bottom: 8px;
+}
+
+.mygallery{
+    height: 450px;
+    /*
+    background-color: rgb(42, 42, 42);
+    */
+    background-color: rgb(38, 38, 38);
+    padding-left:15%;
+    padding-right:15%;
+}
+
+#works{
+    color: #ff7675;
+
+    background-color: rgb(38, 38, 38);
+    margin-bottom: 40px;
+}
+
+#works h3{  
+    font-weight:700;
+    font-size: 2.5rem;
+    padding-top:28px;
+    padding-bottom:8px;
+    margin-left:28px;
+    width: 420px;
+    border-bottom: 2px solid #ff7675;
+}
+
+
+.card-list{
+    display:flex;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    /*border-bottom: 2px solid #5a5a5a;*/
+}
+
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    min-width: 200px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #242424;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.2s; 
+}
+
+.card:hover{
+    transform: translateY(-2rem);
+}
+
+.card:hover~.card{
+    transform: translateX(130px);
+}
+
+.card:not(:first-child){
+    margin-left: -130px;
+}
+
+.card-header{
+    color:white;
+    background: transparent;
+    border: none;
+}
+
+.card-header h4{
+    font-weight: 700;
+}
+
+.ft{
+    display:flex;
+    position: relative;
+    padding-left:15%;
+    padding-right:15%;
+    margin-top: 80px;
+    height:200px;       
+    background-color: rgb(38, 38, 38);   
+}
+
+.ft-list{
+    display:flex;
+    padding-bottom: 8rem;
+    color: #5a5a5a;
+}
+
+.ft-item{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 400px;
+    height: 170px;
+    min-width: 300px;
+    padding: 1.5rem;
+    border-right: 1px solid #5a5a5a;
+
+}
+
+.ft-item h6{
+    font-size: 1.2rem;
+}
+.ft-item a{
+    color: #5a5a5a;
+}
+.ft-item p{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 0.75rem;
+}
+
+
+.services{
+    height: 800px;
+    background: rgb(35,35,35);
+}
+
+.service{
+    margin-top: 350px;
+    padding-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 400px;
+}
+.service-header{
+    float: right;
+    color:#ff7675;
+    width: 500px;
+    height: 80px;
+    margin: 0px 0px 0px 0px;
+    border-bottom: 2px solid #ff7675;
+}
+.service-header h4{
+    padding-top: 20px;
+    padding-left: 13px;
+    padding-right: 13px;
+    font-weight:700;
+    font-size: 2.5rem;
+    text-align: right;
+}
+.service p{
+    position: relative;
+    bottom: 150px;
+    color: white;
+    float: right;
+}
+
+.service a{
+    color:#ff7675;
+    font-weight: 700;
+}
+.service-list{
+    display:flex;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+    margin: auto;
+}
+.servicecard{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 300px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    min-width: 238px;
+    margin: 1rem;
+}
+.servicecard-header{
+    display:none;
+    height: 300px;
+}
+.servicecard:hover .servicecard-header{
+    display: block;
+    background:  rgba(0, 0, 0, 0.88); 
+    color: white;
+}
+.servicecard-header h4{
+    color: white;
+    font-weight:700;
+    padding: 1.5rem;
+    margin: 0;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.servicecard-header p{
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.contactmeh{
+    height: 400px;
+    background: rgb(32,32,32);
+}
+
+.contact{
+    padding-top: 90px;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 400px;
+}
+.contact-header{
+    color:white;
+    width: 220px;
+    height: 220px;
+    margin: 0px 0px 0px 0px;
+    border: 10px solid #ff7675;
+}
+.contact-header h4{
+    padding-top: 20px;
+    padding-left: 13px;
+    font-weight:700;
+    font-size: 2.8rem;
+}
+.contact p{
+    position: relative;
+    bottom: 160px;
+    color: white;
+    float: right;
+}
+
+.contact a{
+    color:#ff7675;
+    font-weight: 700;
+}
