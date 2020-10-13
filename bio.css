@@ -1,0 +1,25 @@
+.biocontainer{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(42, 42, 42);
+}
+
+.myimage img{
+    width: 420px;
+}
+
+.mybio{
+    width: 420px;
+}
+
+.mybio p{
+
+}
+
+.biocontainer{
+    color: white;
+}

@@ -1,0 +1,40 @@
+
+.ft{
+    display:flex;
+    position: relative;
+    padding-left:15%;
+    padding-right:15%;
+    margin-top: 35px;
+    height:200px;       
+    background-color: rgb(38, 38, 38);   
+}
+
+.ft-list{
+    display:flex;
+    padding-bottom: 10rem;
+    color: #5a5a5a;
+}
+
+.ft-item{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 400px;
+    height: 170px;
+    min-width: 300px;
+    padding: 1.5rem;
+    border-right: 1px solid #5a5a5a;
+
+}
+
+.ft-item h6{
+    font-size: 1.2rem;
+}
+.ft-item a{
+    color: #5a5a5a;
+}
+.ft-item p{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 0.75rem;
+}

@@ -1,55 +1,3 @@
-body{
-    background-color: rgb(38, 38, 38);
-    font-family: 'Roboto', sans-serif;
-}
-
-.bg-dark{
-    background-color: rgb(38, 38, 38);
-}
-
-.navbar{
-    margin-left: 12%;
-    margin-right: 12%;
-    overflow: hidden;
-}
-
-header{
-    width: 100%;
-}
-
-.nav-item{
-    font-size: 13px;
-    width: 75px;
-    font-family: 'Roboto', sans-serif;
-    font-weight:400;
-    display: block;
-}
-.navbar-dark .navbar-nav .active>.nav-link, .nav-link.active{
-    color: #ff7675;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color:white;
-}
-
-.navbar-toggler {
-    padding: .45rem .45rem;
-    font-size: 1.05rem;
-    line-height: 1;
-    background-color: #ff7675;
-    border: none;
-}
-
-a.nav-link{
-    text-align: center;
-}
-
-.container, .navigationbar{
-    min-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-}
-
 @keyframes welcomeanim {
     from {opacity: 0%;}
     to {opacity: 100%;}
@@ -276,47 +224,6 @@ a:hover .fa{
     font-weight: 700;
 }
 
-.ft{
-    display:flex;
-    position: relative;
-    padding-left:15%;
-    padding-right:15%;
-    margin-top: 80px;
-    height:200px;       
-    background-color: rgb(38, 38, 38);   
-}
-
-.ft-list{
-    display:flex;
-    padding-bottom: 8rem;
-    color: #5a5a5a;
-}
-
-.ft-item{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    width: 400px;
-    height: 170px;
-    min-width: 300px;
-    padding: 1.5rem;
-    border-right: 1px solid #5a5a5a;
-
-}
-
-.ft-item h6{
-    font-size: 1.2rem;
-}
-.ft-item a{
-    color: #5a5a5a;
-}
-.ft-item p{
-    margin-bottom: 5px;
-    margin-left: 5px;
-    font-size: 0.75rem;
-}
-
-
 .services{
     height: 800px;
     background: rgb(35,35,35);
@@ -363,9 +270,7 @@ a:hover .fa{
     margin: auto;
 }
 .servicecard{
-    display: flex;
     position: relative;
-    flex-direction: column;
     height: 300px;
     width: 500px;
     justify-content: center;
