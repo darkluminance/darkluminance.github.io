@@ -77,11 +77,6 @@ a:hover .fa{
     transform: scale(1.5); 
 }
 
-#Layer_1{
-    width: 12%;
-    height: auto;
-}
-
 .aboutmepart{
     height: 450px;
     /*
@@ -266,7 +261,7 @@ a:hover .fa{
     display:flex;
     padding-top: 12rem;
     padding-bottom: 8rem;
-    margin: auto;
+    justify-content: space-between;
 }
 .servicecard{
     position: relative;
@@ -339,4 +334,107 @@ a:hover .fa{
 .contact a{
     color:#ff7675;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px){
+    .welcome h1{
+        font-size: 2.5rem;
+        position:relative;
+        top: 85px;
+        left: 80px;
+    }
+
+    .welcomeimg{
+        height: 500px;
+    }
+
+    .aboutmecontainer{    
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .whomi {
+        font-size: 3.0rem;
+        top: 80px;
+        left: 80px;
+        height:200px;
+        width: 200px;/*
+        animation-name: welcometextanim;
+        animation-duration: 1s;*/
+    }
+    
+    .info{
+        position:relative;
+        bottom: 120px;
+        margin-right: 5%;
+        list-style-type: none;
+        font-size: 1.05rem;    
+    }
+
+    .welcome{
+        padding-top: 80px;
+        position:relative;
+        height: 380px;
+    }
+
+    .mygallery{
+        height: 420px;
+        padding-left:10%;
+        padding-right:10%;
+    }
+
+    #works h3{  
+        font-size: 2rem;
+    }
+    
+    .card{
+        height: 420px;
+    }
+
+    .services{
+        height: 700px;
+    }
+    .service{
+        margin-top: 300px;
+        padding-top: 35px;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 380px;
+    }
+    .service-header{
+        width: 420px;
+        height: 80px;
+    }
+    .service-header h4{
+        font-size: 2rem;
+    }
+    .service-list{
+        justify-content: space-between;
+        padding-top: 8rem;
+        width: 100%;
+    }
+    .servicecard{
+        position: relative;
+        height: 220px;
+        width: 350px;
+        min-width: 180px;
+        margin: 1rem;
+    }
+    .servicecard-header{
+        height: 220px;
+    }
+    .servicecard-header h4{
+        padding: 1rem;
+        margin: 0;
+        height: 220px;
+        position: relative;
+        top: 18px;
+        font-size: 1.rem;
+    }
+    
+    
+
+
+    
+    
 }
