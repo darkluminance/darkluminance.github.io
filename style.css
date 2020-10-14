@@ -392,14 +392,14 @@ a:hover .fa{
     }
 
     .services{
-        height: 700px;
+        height: 690px;
     }
     .service{
         margin-top: 300px;
         padding-top: 35px;
         margin-left: 5%;
         margin-right: 5%;
-        height: 380px;
+        height: 420px;
     }
     .service-header{
         width: 420px;
@@ -412,12 +412,13 @@ a:hover .fa{
         justify-content: space-between;
         padding-top: 8rem;
         width: 100%;
+        flex-wrap: wrap;
     }
     .servicecard{
         position: relative;
         height: 220px;
-        width: 350px;
-        min-width: 180px;
+        width: 150px;
+        min-width: 120px;
         margin: 1rem;
     }
     .servicecard-header{
@@ -430,6 +431,9 @@ a:hover .fa{
         position: relative;
         top: 18px;
         font-size: 1.rem;
+    }
+    .servicecard-header p{
+        font-size: 0.5rem;
     }
     
     
