@@ -38,3 +38,49 @@
     margin-left: 5px;
     font-size: 0.75rem;
 }
+
+
+/*  For Medium sized devices */
+
+@media only screen and (max-width: 1200px){
+    
+    .ft-list{
+        flex-wrap: wrap;
+    }
+    
+    .ft-item{
+        width: 250px;
+    }
+    
+}
+
+/*  For Smartphones */
+
+@media only screen and (max-width: 850px){
+    .ft{
+        position: relative;
+        padding-left:5%;
+        padding-right:5%;
+        height:500px;    
+    }
+    
+    .ft-list{
+        flex-wrap: wrap;
+    }
+    
+    .ft-item{
+        width: 400px;
+        height: 170px;
+        min-width: 100px;    
+    }
+    
+    .ft-item h6{
+        font-size: 1.2rem;
+    }
+    .ft-item p{
+        margin-bottom: 5px;
+        margin-left: 5px;
+        font-size: 0.75rem;
+    }
+    
+}
