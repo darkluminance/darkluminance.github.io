@@ -7,8 +7,8 @@
 .biocontainer{
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 50px;
-    padding-bottom: 150px;
+    padding-top: 80px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-around;
     background: rgb(42, 42, 42);
@@ -19,6 +19,7 @@
 .myimage{
     transform-style: preserve-3d;
     perspective: 500px;
+    height: 560px;  
     transition: 0.5s;
 }
 
@@ -41,8 +42,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 420px;
+    height: 560px;
     padding-top: 38%;
     background: rgb(18, 18, 18);
     backface-visibility: hidden;
@@ -82,15 +83,60 @@ a:hover .fa{
 
 .mybio h2{
     font-weight: 700;
-    width: 80px;
+    width: 69px;
     
     padding-bottom: 20px;
     border-bottom: 5px solid white;
 }
 .mybio p{
-    padding-top: 80px;
+    padding-top: 69px;
+}
+.mybio p::first-letter{
+    font-size: 2rem;
 }
 
 .biocontainer{
     color: white;
+}
+
+.achievemento{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 50px;
+    padding-top: 80px;
+    background: rgb(42, 42, 42);
+    animation-name: welcomeanim;
+    animation-duration: 2s;
+    color: white;
+}
+
+.achievemento h3{
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 5px solid white;
+    width: 420px;
+}
+
+.ach-container{
+    margin: 0 5%;
+    padding: 80px 0;
+}
+.ach{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.ach-content{
+    width: 350px;
+}
+.ach-content h4{
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    font-weight: 700;
+}
+.ach-content p{
+    padding-top: 10px;
+}
+#achpix{
+    width: 250px;
 }

@@ -107,8 +107,6 @@ a:hover .fa{
     font-weight:700;
     font-size: 3.5rem;
     position:relative;
-    margin-bottom:0;
-    margin-top:0;
     top: 80px;
     left: 100px;
     background-color: #ff7675;
@@ -123,9 +121,9 @@ a:hover .fa{
     width: 75%;
     margin: auto;
     position:relative;
-    top: 20%;
-    
+    top: 20%;  
 }
+
 
 .info{
     color:white;
