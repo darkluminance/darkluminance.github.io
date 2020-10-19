@@ -186,7 +186,6 @@ a:hover{
 
 .logos a{
     height: 225px;
-    object-fit: cover;
 }
 
 .logos a:hover .fullres{
