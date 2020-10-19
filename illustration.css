@@ -1,0 +1,47 @@
+
+.illustrations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.illustration{
+    width: 400px;
+    height: 400px;
+    box-shadow: 10px 10px 18px 2px #111111;
+    object-fit: cover;
+}
+
+a:hover{
+    color: #d86161 !important;
+}
+
+.fullresils{
+    display: none;
+    padding-top: 35%;
+    height: 400px;
+    position: relative;
+    bottom: 100%;
+    background: rgba(8, 8, 8, .8);
+    margin: 0;
+
+}
+
+.illustrations p{
+    word-wrap:break-word;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.illustrations a{
+    height: 400px;
+    height: 400px;
+    margin: 25px 0;
+}
+
+.illustrations a:hover .fullresils{
+    display: block;
+}
