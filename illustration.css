@@ -9,8 +9,16 @@
 .illustration{
     width: 400px;
     height: 400px;
+    min-width: 100px;
+    min-height: 100px;
     box-shadow: 10px 10px 18px 2px #111111;
     object-fit: cover;
+}
+@media (max-width: 780px) {
+    .achievemento h3{
+        border-bottom: none;
+        width: 80%;
+    }  
 }
 
 a:hover{

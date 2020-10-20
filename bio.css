@@ -10,6 +10,7 @@
     padding-top: 80px;
     padding-bottom: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background: rgb(42, 42, 42);
     animation-name: welcomeanim;
@@ -113,7 +114,7 @@ a:hover .fa{
     font-weight: 700;
     padding-bottom: 20px;
     border-bottom: 5px solid white;
-    width: 420px;
+    width: 80%;
 }
 
 .ach-container{
@@ -137,7 +138,8 @@ a:hover .fa{
     padding-top: 10px;
 }
 #achpix{
-    width: 250px;
+    width: 42%;
+    height: 42%;
 }
 a .ach{
     color: white;

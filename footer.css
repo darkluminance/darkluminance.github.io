@@ -55,6 +55,27 @@
 }
 
 /*  For Smartphones */
+@media (max-width: 20rem) {
+    .ft-list{
+        flex-wrap: wrap;
+        width: 10rem;
+    }
+    
+  }
+
+@media (max-width: 30rem) {
+    .ft-list{
+        flex-wrap: wrap;
+        width: 20rem;
+    }
+    
+  }
+  @media (max-width: 50rem) {
+    .ft-list{
+        width: 40rem;
+        flex-wrap: wrap;
+    }
+  }
 
 @media only screen and (max-width: 850px){
     .ft{
@@ -84,3 +105,4 @@
     }
     
 }
+  
