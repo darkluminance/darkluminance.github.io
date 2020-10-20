@@ -91,9 +91,6 @@ a:hover .fa{
     height: 450px;
 }
 
-.aboutlink{
-    color:white; 
-}
 .aboutlink:hover{
     color:rgb(199, 199, 199);
     text-decoration: none;
@@ -208,7 +205,7 @@ a:hover .fa{
 
 .card-header{
     color:white;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.479);
     border: none;
 }
 
