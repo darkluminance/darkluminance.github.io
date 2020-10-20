@@ -22,7 +22,7 @@ a:hover{
 .logoitems a{
     height: 100%;
     margin: 25px 0;
-    transition: 0.25s;
+    transition: 0.28s;
 }
 
 .logoitems a:hover .fullreslogos{
