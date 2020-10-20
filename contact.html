@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Illustrations by Raiyan Abrar</title>
+    <title>Contact Me</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./scroll animation/aos.css">
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="bio.css">
-    <link rel="stylesheet" href="illustration.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="lightbox.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -50,8 +51,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="services.html">Services</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="logo.html">Logos</a>
@@ -65,43 +66,75 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="project.html">Projects</a>
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="illustration.html">Illustrations <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="illustration.html">Illustrations</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </header>
         </div>
-
-
-    
+            
 
         <div class="achievemento">
 
-            <h3 data-aos="zoom-in" style="display: inline-block;" >Check out my digital arts and illustrations</h3>
-            
-            <div id="logogallery"></div>
+            <h3 data-aos="zoom-in" style="display: inline-block;" >Contact Me</h3>
+
 
         <div class="ach-logos">
-            <div data-aos="zoom-in-up">
-                <div class="illustrations">
-                        <a href="./img/illustrations/nightillustration.png" data-lightbox="mygallery"><img src="./img/illustrations/nightillustration - Copy.png" loading="lazy"  alt="" class="illustration">
-                            <div class="fullresils"><p>Wolf on mountains in a starry night</p></div></a>
-                        <a href="./img/illustrations/corona digital - Copy.png" data-lightbox="mygallery"><img src="./img/illustrations/corona digital.png" loading="lazy"  alt="" class="illustration">
-                            <div class="fullresils"><p><html>An awareness illustration<br>of the 2020 pandemic</html></p></div></a>
-                        <a href="./img/illustrations/thanos care react.jpg" data-lightbox="mygallery"><img src="./img/illustrations/thanos care react - Copy.jpg"  loading="lazy" alt="" class="illustration">
-                            <div class="fullresils"><p>Facebook care react featuring Thanos</p></div></a>
-                        <a href="./img/illustrations/ironmancarereact.jpg" data-lightbox="mygallery"><img src="./img/illustrations/ironmancarereact - Copy.jpg" loading="lazy"  alt="" class="illustration">
-                            <div class="fullresils"><p>Facebook care react featuring Iron Man</p></div></a>
-                        <a href="./img/illustrations/vegito.jpeg" data-lightbox="mygallery"><img src="./img/illustrations/vegito - Copy.jpeg" loading="lazy"  alt="" class="illustration">
-                            <div class="fullresils"><p>Vegito from Dragon Ball series</p></div></a>
-                        <a href="./img/illustrations/shinobu.jpg" data-lightbox="mygallery"><img src="./img/illustrations/shinobu - Copy.jpg" loading="lazy"  alt="" class="illustration">
-                            <div class="fullresils"><p>A fan art of Shinobu<br>from the anime 'Demon Slayer'</p></div></a>
-                        <a href="./img/illustrations/Rengoku.jpg" data-lightbox="mygallery"><img src="./img/illustrations/Rengoku - Copy.jpg" loading="lazy"  alt="" class="illustration">
-                            <div class="fullresils"><p>A fan art of Rengoku<br>from the anime 'Demon Slayer'</p></div></a>
-                        <a href="./img/illustrations/kanao.jpg" data-lightbox="mygallery"><img src="./img/illustrations/kanao - Copy.jpg" loading="lazy"  alt="" class="illustration">
-                            <div class="fullresils"><p>Kanao from the anime 'Demon Slayer'</p></div></a>
+            <div data-aos="fade-right">
+                <div>
+                    <p style="color: white">If you want to contact me about anything: </p>
+
+                    <form action="/action_page.php">
+                        <div class="names" style="display: flex; flex-wrap: wrap; padding-bottom: 50px;">
+                            <div class="first-name" style="display: inline; padding-right: 100px;">
+                                <label for="fname">First name:</label><br>
+                                <input 
+                                    type="text" 
+                                    id="fname" 
+                                    name="fname" 
+                                    value="" 
+                                    spellcheck="false"
+                                    maxlength="30"
+                                    data-title="First"
+                                    aria-required="true"
+                                /><br>
+                            </div>
+                            <div class="last-name" style="display: inline">
+                                <label for="lname">Last name:</label><br>
+                                <input    
+                                    type="text" 
+                                    id="lname" 
+                                    name="lname" 
+                                    value="" 
+                                    spellcheck="false"
+                                    maxlength="30"
+                                    data-title="Last"
+                                    aria-required="true"
+                                /><br>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="message" style="display: block">
+                            <label for="message">Your Message:</label><br>
+                            <textarea 
+                                style="width: 45%; height: 180px;"
+                                id="message" 
+                                name="message"
+                                spellcheck="true"
+                                maxlength="420"
+                                aria-required="true">
+                            </textarea><br><br>
+                        </div>
+                        
+                        <div class="submitbtn" style="display: inline; float: left">
+                            <input type="submit" value="Submit">
+                        </div>
+
+                    </form>
+                    
                 </div>
             </div>
         </div>
@@ -118,11 +151,6 @@
                   <p><a href="https://dribbble.com/darkluminance" target="_blank">DRIBBBLE</a></p>
                   <p><a href="https://github.com/darkluminance" target="_blank">GITHUB</a></p>
                   <p><a href="https://www.instagram.com/__rainyan__" target="_blank">INSTAGRAM</a></p>
-                </article>
-                <article class="ft-item">
-                  <h6>Contact</h6>
-                  <br>
-                  <p>+8801840054144</p>
                 </article>
                 
             </section>
