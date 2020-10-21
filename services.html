@@ -101,11 +101,106 @@
                         <h4 style="color: white; text-decoration: none !important; padding-bottom: 15px; padding-top: 25px;">Brand, merch and product label design</h4>
                         <p style="color: white; text-decoration: none !important; padding-bottom: 50px; padding-left: 5px;">I will create your Brand identity, merch or product labels for your company.</p>
                     </div>
-                    <div style="padding-bottom: 100px;">
+                    <div style="padding-bottom: 100px; border-bottom: 1px solid rgb(68, 68, 68)">
                         <img src="https://www.animaker.com/static/assets/images/intromaker/intromaker-explainer-ognew3.jpg" loading="lazy"  alt="" class="gameitem">
                         <h4 style="color: white; text-decoration: none !important; padding-bottom: 15px; padding-top: 25px;">Create an intro video</h4>
                         <p style="color: white; text-decoration: none !important; padding-bottom: 50px; padding-left: 5px;">I will create an intro video for your company, event or youtube channel.</p>
                     </div>
+                    
+                </div>
+
+                <div style="padding-top: 180px;">
+                    <p style="color: white">Want to do business with me? Please fill up your details.<br>I am only accepting clients from small business or individuals at the moment. </p>
+                    <br><br>
+
+                    <form action="/action_page.php">
+                        <div class="names" style="display: flex; flex-wrap: wrap; padding-bottom: 50px;">
+                            <div class="first-name" style="display: inline; padding-right: 80px;">
+                                <label for="fname">First name:</label><br>
+                                <input 
+                                    type="text" 
+                                    id="fname" 
+                                    name="fname" 
+                                    value="" 
+                                    spellcheck="false"
+                                    maxlength="30"
+                                    data-title="First"
+                                    aria-required="true"
+                                /><br>
+                            </div>
+                            <div class="last-name" style="display: inline">
+                                <label for="lname">Last name:</label><br>
+                                <input    
+                                    type="text" 
+                                    id="lname" 
+                                    name="lname" 
+                                    value="" 
+                                    spellcheck="false"
+                                    maxlength="30"
+                                    data-title="Last"
+                                    aria-required="true"
+                                /><br>
+                            </div>
+                        </div>
+
+                        <div class="description" style=" padding-bottom: 35px;">
+                            <label for="description">Project details</label><br> 
+                            <select
+                                id="project-type"
+                                name="project-type"
+                                aria-required="true"
+                            >
+                            
+                                <option value="null">-- Choose your project type --</option>
+
+                                <option value="Logo Design">Logo Design</option>
+                            
+                                <option value="Illustration">Illustration</option>
+                            
+                                <option value="Brand design">Brand design</option>
+
+                                <option value="Merch design">Merch design</option>
+
+                                <option value="Product label design">Product label design</option>
+                            
+                                <option value="Intro video">Intro video</option>
+                            
+                            </select>
+                            <br><br>
+                            <div class="deadline" style="display: inline">
+                                <label for="deadline">Approximate deadline (in weeks):</label><br>
+                                <input    
+                                    type="number" 
+                                    id="deadline" 
+                                    name="deadline" 
+                                    value="" 
+                                    spellcheck="false"
+                                    maxlength="2"
+                                    data-title="deadline"
+                                    aria-required="true"
+                                /><br>
+                            </div>
+                      </div>
+                        
+                        
+                        <div class="message" style="display: block;">
+                            <label for="message">Project description:</label><br>
+                            <textarea 
+                                style="width: 45%; height: 180px;"
+                                id="message" 
+                                name="message"
+                                spellcheck="true"
+                                maxlength="420"
+                                aria-required="true">
+                            </textarea><br><br>
+                        </div>
+                        <div id="business-project" ></div>
+                        
+                        <div class="submitbtn" style="display: inline; float: left">
+                            <input type="submit" value="Submit">
+                        </div>
+
+                    </form>
                     
                 </div>
             </div>
