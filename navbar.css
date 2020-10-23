@@ -1,7 +1,6 @@
 .navbar{
     margin-left: 12%;
     margin-right: 12%;
-    overflow: hidden;
 }
 
 header{
@@ -48,4 +47,9 @@ a.nav-link{
 #Layer_1{
     width: 30%;
     height: auto;
+}
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
