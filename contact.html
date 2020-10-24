@@ -86,7 +86,7 @@
                     <p style="color: white">Want to contact me about business? <a href="./services.html#business-project"> Click here</a> </p>
                     <br><br>
 
-                    <form action="/action_page.php">
+                    <div>
                         <div class="names" style="display: flex; flex-wrap: wrap; padding-bottom: 50px;">
                             <div class="first-name" style="display: inline; padding-right: 80px;">
                                 <label for="fname">First name:</label><br>
@@ -124,16 +124,15 @@
                                 id="message" 
                                 name="message"
                                 spellcheck="true"
-                                maxlength="420"
                                 aria-required="true">
                             </textarea><br><br>
                         </div>
                         
                         <div class="submitbtn" style="display: inline; float: left">
-                            <input type="submit" value="Submit">
+                            <input type="submit" value="Submit" onclick="getUserInputs()">
                         </div>
 
-                    </form>
+                    </div>
                     
                 </div>
             </div>
@@ -155,6 +154,59 @@
                 
             </section>
       </div>
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB-TO3wgPKBBWoWNObV_atY6TWczxYlDjo",
+            authDomain: "my-portfolio-website-project.firebaseapp.com",
+            databaseURL: "https://my-portfolio-website-project.firebaseio.com",
+            projectId: "my-portfolio-website-project",
+            storageBucket: "my-portfolio-website-project.appspot.com",
+            messagingSenderId: "259010828727",
+            appId: "1:259010828727:web:6c41860a6dd54ff862f032",
+            measurementId: "G-K7FQP8T5VW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        var database = firebase.database();
+
+        var ref = database.ref('contact-data');
+        document.getElementById("message").value = "";
+
+        
+        </script>
+        <script>
+            function getUserInputs(){
+                console.log("Came here");
+                var msg = document.getElementById("message").value;
+                var nam = document.getElementById('fname').value + ' ' + 
+                document.getElementById('lname').value;
+                var data = {
+                name: nam,
+                message: msg
+                }
+
+                ref.push(data);
+
+                alert("Your message has been sent.");
+                document.getElementById("message").value = "";
+                document.getElementById("fname").value = "";
+                document.getElementById("lname").value = "";
+            }
+        </script>
     
 </body>
 </html>
