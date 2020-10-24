@@ -115,9 +115,23 @@
                                 /><br>
                             </div>
                         </div>
+
+                        <div class="email" style="display: inline; padding-bottom: 50px;">
+                            <label for="email">Email Address:</label><br>
+                            <input    
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                value="" 
+                                spellcheck="false"
+                                maxlength="30"
+                                data-title="Email"
+                                aria-required="true"
+                            /><br>
+                        </div>
                         
                         
-                        <div class="message" style="display: block">
+                        <div class="message" style="display: block; padding-top: 50px;">
                             <label for="message">Your Message:</label><br>
                             <textarea 
                                 style="width: 45%; height: 180px;"
@@ -185,24 +199,45 @@
 
         var ref = database.ref('contact-data');
         document.getElementById("message").value = "";
+        document.getElementById("email").value = "";
 
         
         </script>
         <script>
             function getUserInputs(){
                 console.log("Came here");
-                var msg = document.getElementById("message").value;
-                var nam = document.getElementById('fname').value + ' ' + 
-                document.getElementById('lname').value;
+                var msg = document.getElementById("message").value.trim();
+                var nam = document.getElementById('fname').value.trim() + ' ' + 
+                document.getElementById('lname').value.trim();
+                var eml = document.getElementById('email').value.trim();
+
+                if(eml == ""){
+                    alert("Please enter an Email ID where I can contact you later.");
+                    return;
+                }
+                if(msg == ""){
+                    alert("Please type a message if you want to contact me about anything.");
+                    return;
+                }
+                if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(eml))
+                {
+                    
+                }else{
+                    alert("You have entered an invalid email address!")
+                    return;
+                }
+
                 var data = {
-                name: nam,
-                message: msg
+                    name: nam,
+                    message: msg,
+                    email: eml
                 }
 
                 ref.push(data);
 
                 alert("Your message has been sent.");
                 document.getElementById("message").value = "";
+                document.getElementById("email").value = "";
                 document.getElementById("fname").value = "";
                 document.getElementById("lname").value = "";
             }
