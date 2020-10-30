@@ -137,6 +137,9 @@ a:hover .fa{
 .ach-content p{
     padding-top: 10px;
 }
+.ach-content a{
+    color: #d86161;
+}
 #achpix{
     width: 42%;
     height: 42%;

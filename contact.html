@@ -71,55 +71,71 @@
                 </nav>
             </header>
         </div>
+
+        <div class="jumbotron"
+            style="border-radius: 0;
+                   background: url('design.jpg');
+                   background-attachment: cover;
+                   height: 220px;
+                   margin: 0; ">
+            <h1  data-aos="zoom-in" 
+            style=" 
+                    text-align: center;
+                    color: white;
+                    font-weight: 700;
+                    margin: 0;
+                     " >CONTACT ME</h1>
+        </div>
             
 
         <div class="achievemento">
 
-            <h3 data-aos="zoom-in" style="display: inline-block;" >Contact Me </h3>
-
-
         <div class="ach-logos">
-            <div data-aos="fade-right">
-                <div>
-                    <p style="color: white">If you want to contact me about anything, please drop out your info. </p>
-                    <br>
-                    <p style="color: white">Want to contact me about business? <a href="./services.html#business-project"> Click here</a> </p>
-                    <br><br>
+            <div>
+                <div style="text-align: center;">
+                   
+                        <div  data-aos="zoom-in-up">
+                            <h4 style="text-align: center; color:#d86161;">Get in touch with me !</h4><br><br><br>
 
+                            <div class="getintouch" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                                <div style="padding: 5px 50px; border-right: 2px solid #d86161; width: 300px;">
+                                    <i class="fa fa-phone" style="color:#d86161;"></i><br><br>
+                                    <h5 style="color:#d86161; font-weight: 700;">PHONE</h5><br>
+                                    <p style="margin: 0; font-size: 13px;">Phone +880 1840054144</p>
+                                </div>
+                                <div style="padding: 0 50px; border-left: 2px solid #d86161; width: 300px;">
+                                    <i class="fa fa-envelope" style="color:#d86161;"></i><br><br>
+                                    <h5 style="color:#d86161; font-weight: 700;">EMAIL</h5><br>
+                                    <p style="margin: 0; font-size: 13px;">raiyan.abrar3058@gmail.com</p>
+                                    <p style="margin-top: 8px; font-size: 13px;">eirus.studios@gmail.com</p>
+                                </div>
+                            </div>  
+                        </div>                 
+                    
+                    <br>
+                    <br>
+                    <p style="color: white; line-height: 1.8; padding-top: 100px; font-weight: 700;">IF YOU GOT ANY QUESTIONS<br>DO NOT HESITATE TO SEND ME A MESSAGE</p>
+                    <br>
                     <div>
-                        <div class="names" style="display: flex; flex-wrap: wrap; padding-bottom: 50px;">
-                            <div class="first-name" style="display: inline; padding-right: 80px;">
-                                <label for="fname">First name:</label><br>
-                                <input 
-                                    type="text" 
-                                    id="fname" 
-                                    name="fname" 
-                                    value="" 
-                                    spellcheck="false"
-                                    maxlength="30"
-                                    data-title="First"
-                                    aria-required="true"
-                                /><br>
-                            </div>
-                            <div class="last-name" style="display: inline">
-                                <label for="lname">Last name:</label><br>
-                                <input    
-                                    type="text" 
-                                    id="lname" 
-                                    name="lname" 
-                                    value="" 
-                                    spellcheck="false"
-                                    maxlength="30"
-                                    data-title="Last"
-                                    aria-required="true"
-                                /><br>
-                            </div>
+                        <div class="first-name inputItem" style="display: inline; padding-bottom: 50px;">
+                            <input 
+                                style="width:  420px;" 
+                                type="text" 
+                                id="fname" 
+                                name="fname" 
+                                value="" 
+                                spellcheck="false"
+                                maxlength="30"
+                                data-title="First"
+                                aria-required="true"
+                                autocomplete="off"
+                            /><br>
+                            <label for="fname" class="labelYo" id="lbl">Your name</label><br>
                         </div>
 
-                        <div class="email" style="display: inline; padding-bottom: 50px;">
-                            <label for="email">Email Address:</label><br>
+                        <div class="email inputItem" style="display: inline; padding-bottom: 50px;">
                             <input    
-                                style="width: 45%;" 
+                                style="width:  420px;" 
                                 type="email" 
                                 id="email" 
                                 name="email" 
@@ -128,46 +144,55 @@
                                 maxlength="30"
                                 data-title="Email"
                                 aria-required="true"
+                                autocomplete="off"
                             /><br>
+                            <label for="email" class="labelYo" id="lbl">Email Address</label><br>
                         </div>
                         
                         
-                        <div class="message" style="display: block; padding-top: 50px;">
-                            <label for="message">Your Message:</label><br>
+                        <div class="message inputItem" style="display: block;">
                             <textarea 
-                                style="width: 45%; height: 180px;"
+                                style="width: 420px; height: 180px; border:none;"
                                 id="message" 
                                 name="message"
                                 spellcheck="true"
                                 aria-required="true">
-                            </textarea><br><br>
+                            </textarea><br>
+                            <label for="message" class="labelYo" id="lbl">Your Message</label><br><br>
                         </div>
                         
-                        <div class="submitbtn" style="display: inline; float: left">
-                            <input type="submit" value="Submit" onclick="getUserInputs()">
+                        <div class="submitbtnA" style="display: inline;float: center">
+                            <input type="submit" style=" text-align: center !important; " value="Send Message" onclick="getUserInputs()">
                         </div>
 
                     </div>
                     
                 </div>
+                <br><br><br>
+                <br><br><br>
+                <br><br><br>
+                <div style="width: 45%; margin: auto;" class="connect" data-aos="zoom-out-down">
+                    <h4 style="text-align: center; color:#d86161;">Connect with me !</h4>
+                    <div class = "links" style="margin-top: 50px; display: flex; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/__rainyan__" target="_blank"><i class="fa fa-instagram" style="color:#d86161;"></i></a>
+                        <a href="https://www.facebook.com/darkluminance" target="_blank"><i class="fa fa-facebook" style="color:#d86161;"></i></a>
+                        <a href="https://dribbble.com/darkluminance" target="_blank"><i class="fa fa-dribbble" style="color:#d86161;"></i></a>
+                        <a href="https://github.com/darkluminance" target="_blank"><i class="fa fa-github" style="color:#d86161;"></i></a>
+                        <a href="https://www.linkedin.com/in/raiyan-abrar-1b874717a/" target="_blank"><i class="fa fa-linkedin" style="color:#d86161;"></i></a>
+                    </div>
+                </div>
+                
+                
+                <br><br><br>
+                <p style="color: white; text-align: center;">Want to talk about business instead? <a href="./services.html#business-project" style="color:  #d86161">Click here</a> </p>
             </div>
         </div>
 
         </div>
 
         
-    <div class="ft">
-            <section class="ft-list">
-                <article class="ft-item">
-                  <h6>Links</h6>
-                  <br>
-                  <p><a href="https://www.facebook.com/darkluminance" target="_blank">FACEBOOK</a></p>
-                  <p><a href="https://dribbble.com/darkluminance" target="_blank">DRIBBBLE</a></p>
-                  <p><a href="https://github.com/darkluminance" target="_blank">GITHUB</a></p>
-                  <p><a href="https://www.instagram.com/__rainyan__" target="_blank">INSTAGRAM</a></p>
-                </article>
-                
-            </section>
+      <div class="ft" style="height: 50px !important; justify-content: center;">
+            <h6 style="color: rgb(99, 99, 99);">Copyrights  <i class="fa fa-copyright" style="font-size: 14px !important;"></i> 2020. All rights reserved</h6>
       </div>
 
       <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -208,10 +233,13 @@
             function getUserInputs(){
                 console.log("Came here");
                 var msg = document.getElementById("message").value.trim();
-                var nam = document.getElementById('fname').value.trim() + ' ' + 
-                document.getElementById('lname').value.trim();
+                var nam = document.getElementById('fname').value.trim();
                 var eml = document.getElementById('email').value.trim();
 
+                if(nam == ""){
+                    alert("Please enter your name.");
+                    return;
+                }
                 if(eml == ""){
                     alert("Please enter an Email ID where I can contact you later.");
                     return;
