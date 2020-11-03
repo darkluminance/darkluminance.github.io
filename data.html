@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        <h1>Client data</h1>
+        <ol id="clientdata">
+        </ol>
+
+        <h1>Contact data</h1>
+        <ol id="contactdata">
+        </ol>
+    </p>
+    
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+      <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+          apiKey: "AIzaSyB-TO3wgPKBBWoWNObV_atY6TWczxYlDjo",
+          authDomain: "my-portfolio-website-project.firebaseapp.com",
+          databaseURL: "https://my-portfolio-website-project.firebaseio.com",
+          projectId: "my-portfolio-website-project",
+          storageBucket: "my-portfolio-website-project.appspot.com",
+          messagingSenderId: "259010828727",
+          appId: "1:259010828727:web:6c41860a6dd54ff862f032",
+          measurementId: "G-K7FQP8T5VW"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      var database = firebase.database();
+      var ref1 = database.ref('Client-data');
+      var ref2 = database.ref('contact-data');
+      
+      ref1.on('value', gotdataclient, errdata);
+      ref2.on('value', gotdatacontact, errdata);
+      
+
+      function gotdataclient (data){
+          document.getElementById('clientdata').innerHTML = '';
+
+          var dta = data.val();
+          var keys = Object.keys(dta);
+          var node = document.createElement("LI");    
+          for(var i = 0; i< keys.length; i++){
+              var k = keys[i];
+
+              var v = dta[k];
+
+              node = document.createElement("LI");
+              var datatoappend = "Name: " + v.name +  " || Email: " + v.email + " || Project type: " + v.project_Type + " || Deadline: " + v.project_Time + " || Details: " + v.project_Description;   
+              var textnode = document.createTextNode(datatoappend);
+              node.appendChild(textnode);
+              document.getElementById("clientdata").appendChild(node);
+          }
+      }
+
+      function gotdatacontact (data){          
+          document.getElementById('contactdata').innerHTML = '';
+
+          var dta = data.val();
+          var keys = Object.keys(dta);
+          var node = document.createElement("LI");                
+          for(var i = 0; i< keys.length; i++){
+              var k = keys[i];
+
+              var v = dta[k];
+
+              node = document.createElement("LI");
+              var datatoappend = "Name: " + v.name + " || Message: " + v.message + " || Email: " + v.email;
+              var textnode = document.createTextNode(datatoappend);
+              node.appendChild(textnode);
+              document.getElementById("contactdata").appendChild(node);
+          }
+      }
+
+      function errdata(err){
+          console.log("ERROR!!");
+          console.log(err);
+      }
+      
+
+      
+      </script>
+    
+</body>
+</html>
