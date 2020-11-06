@@ -3,6 +3,28 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
+/* width */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(38,38,38); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff7675; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 118, 117,0.75); 
+  }
+
+
 input{
     background-color: rgb(68, 68, 68);
     color: white;
