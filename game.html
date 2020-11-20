@@ -16,6 +16,28 @@
     <link rel="stylesheet" href="lightbox.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .carousel-item {
+        height: 100vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+        .carousel-caption {
+        position: relative;
+        text-align: left;
+        left: 13%;
+        top: 18%;
+        width: 50%;
+        }
+        .display-4{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -33,7 +55,7 @@
 
         <div class = "container navigationbar">
             <header>
-                <nav class="navbar navbar-expand-lg navbar-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                     <a class="navbar-brand" href="index.html"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.96 95.96"><defs><style>.cls-1{fill:#fff;}</style></defs><title>rna</title><path class="cls-1" d="M87.18,98H12.82A10.82,10.82,0,0,1,2,87.18V12.82A10.82,10.82,0,0,1,12.82,2H87.18A10.82,10.82,0,0,1,98,12.82V87.18A10.82,10.82,0,0,1,87.18,98ZM12.82,7.74a5.09,5.09,0,0,0-5.08,5.08V87.18a5.09,5.09,0,0,0,5.08,5.08H87.18a5.09,5.09,0,0,0,5.08-5.08V12.82a5.09,5.09,0,0,0-5.08-5.08Z" transform="translate(-2.02 -2.02)"/><rect class="cls-1" x="16.81" y="16.81" width="7.33" height="62.34" rx="3.67"/><rect class="cls-1" x="49.81" y="16.81" width="7.33" height="62.34" rx="3.67"/><rect class="cls-1" x="71.82" y="16.81" width="7.33" height="62.34" rx="3.67"/><rect class="cls-1" x="27.81" y="16.81" width="7.33" height="29.82" rx="3.67"/><rect class="cls-1" x="38.81" y="16.81" width="7.33" height="29.82" rx="3.67"/><rect class="cls-1" x="60.81" y="33.07" width="7.33" height="29.82" rx="3.67"/><rect class="cls-1" x="38.81" y="49.33" width="7.33" height="29.82" rx="3.67"/></svg> </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -70,11 +92,116 @@
                 </nav>
             </header>
         </div>
-    
 
+        <div id="carouselExampleIndicators" data-aos="fade-in" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <!-- Slide One - Set the background image for this slide in the line below -->
+              <div class="carousel-item active" style="background-image:
+              linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0)), url('./img/games/a.png')">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4">Rainbow Heptagon</h2><br>
+                  <p class="lead">A color matching game that gets harder overtime.</p><br>
+                  <p>Game Engine: Unity</p>
+                  <p>Platform: Android, Windows, Web</p>
+                  <p>Project time: 2018 (Updated in 2019 and 2020 twice)</p>
+                  <br>
+                  <button style="
+                  background-color: #d86161 !important;
+                  color:white !important;
+                  border: none !important;
+                  width: 160px !important;
+                  height: 35px !important;
+                  "><a href="https://darkluminance.github.io/Rainbow-Heptagon-web-build" target="_blank" style="color: white;">Play Now</a></button>
+                  <br><br>
+                  <button style="
+                  background-color: #d86161 !important;
+                  color:white !important;
+                  border: none !important;
+                  width: 160px !important;
+                  height: 35px !important;
+                  "><a href="https://www.facebook.com/DarkLuminance/videos/vb.100000533834079/3445880798773014/?type=3" target="_blank" style="color: white; font-size: 13px;">Watch gameplay</a></button>
+                </div>
+              </div>
+              <!-- Slide Two - Set the background image for this slide in the line below -->
+              <div class="carousel-item" style="background-image:
+              linear-gradient(to right, rgba(0, 0, 0, 0.69), rgba(117, 19, 93, 0)),  url('./img/games/b.png')">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4">Disco Tag</h2><br>
+                  <p class="lead">A multiplayer FPS inside a disco hall.</p><br>
+                  <p>Game Engine: Unity</p>
+                  <p>Platform: Windows, Web</p>
+                  <p>Project time: 2020</p>
+                  <br>
+                  <button style="
+                  background-color: #d86161 !important;
+                  color:white !important;
+                  border: none !important;
+                  width: 160px !important;
+                  height: 35px !important;
+                  "><a href="https://www.facebook.com/DarkLuminance/videos/vb.100000533834079/3427587677268993/?type=3" target="_blank" style="color: white; font-size: 13px;">Watch gameplay</a></button>
+                </div>
+              </div>
+              <!-- Slide Three - Set the background image for this slide in the line below -->
+              <div class="carousel-item" style="background-image:
+              linear-gradient(to right, rgba(0, 0, 0, 0.99), rgba(117, 19, 93, 0)),  url('./img/games/c.png')">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4">Colorful Planets</h2><br>
+                  <p class="lead">Match the color of the planets with that of the passing planet.</p><br>
+                  <p>Game Engine: Unity</p>
+                  <p>Platform: Windows</p>
+                  <p>Project time: 2019</p>
+                  <br>
+                  <button style="
+                  background-color: #d86161 !important;
+                  color:white !important;
+                  border: none !important;
+                  width: 160px !important;
+                  height: 35px !important;
+                  "><a href="https://www.facebook.com/DarkLuminance/videos/vb.100000533834079/2649681618392940/?type=3" target="_blank" style="color: white; font-size: 13px;">Watch gameplay</a></button>
+                </div>
+              </div>
+               <!-- Slide Four - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image:
+                linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(117, 19, 93, 0)),  url('./img/games/d.png">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h2 class="display-4">Pokemon Xenonia</h2><br>
+                    <p class="lead">Go on your own Pokemon journey in the vast Forren region.</p><br>
+                    <p>Game Engine: RPG Maker XP</p>
+                    <p>Platform: Windows</p>
+                    <p>Project time: 2015 - 2016 (Project has been canceled)</p>
+                    <br>
+                    <button style="
+                    background-color: #d86161 !important;
+                    color:white !important;
+                    border: none !important;
+                    width: 160px !important;
+                    height: 35px !important;
+                    "><a href="https://www.facebook.com/DarkLuminance/videos/vb.100000533834079/1262463913781391/?type=3" target="_blank" style="color: white; font-size: 13px;">Watch gameplay</a></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+           
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+          </div>
+    
+<!--
         <div class="achievemento">
 
-            <h3 data-aos="zoom-in" style="display: inline-block;" >Games made by me </h3>
+        <h3 data-aos="zoom-in" style="display: inline-block;" >Games made by me </h3>
             
         <div class="ach-logos">
             <div data-aos="fade-right">
@@ -142,6 +269,6 @@
                 
             </section>
       </div>
-    
+    -->
 </body>
 </html>
